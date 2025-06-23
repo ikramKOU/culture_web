@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="منصة رقمية للثقافة المغربية">
+  <meta name="keywords" content="رقمنة الثقافة, التراث المغربي, الدعم الثقافي, القانون الثقافي">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="فريق ديجي-ثقافة">
+  <link rel="icon" href="images/favicon.png">
+  <title>ديجي-ثقافة | نحو رقمنة الثقافة</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/unicons.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+    }
+
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-big-image {
+      width: 130%;
+      max-width: none;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .custom-big-image {
+        width: 100%;
+      }
+
+      .about-text,
+      .custom-btn-group {
+        text-align: center !important;
+        justify-content: center !important;
+      }
+    }
+
+    .project-img {
+      max-height: 500px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-img:hover {
+      transform: scale(1.03);
+    }
+
+    .owl-dots .owl-dot span {
+      background: #6c63ff;
+    }
+
+    .footer {
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+  <body>
+
+    <!-- MENU -->
+    <style>
+
+      /* Bande info en haut */
+.top-bar {
+  background-color: #1e3a8a; /* bleu profond (taille sm) */
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+/* Icônes */
+.top-bar .fas {
+  color: #facc15; /* jaune vif pour l’accent */
+}
+
+/* Liens du téléphone */
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.top-bar a:hover {
+  color: #facc15;
+}
+
+/* Padding & alignement */
+.top-bar .container {
+  max-width: 1200px;
+}
+.top-bar .row {
+  align-items: center;
+}
+
+/* Cacher sur très petits écrans */
+@media (max-width: 576px) {
+  .top-bar {
+    display: none;
+  }
+}
+
+/* Ajustements pour tablettes */
+@media (min-width: 577px) and (max-width: 992px) {
+  .top-bar .col-auto {
+    font-size: 0.75rem;
+  }
+}
+
+/* Animation d’apparition */
+.top-bar {
+  animation: fadeInDown 0.6s ease forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    </style>
+     <!-- Top Bar -->
+<!-- Top Bar -->
+<div class="top-bar py-4 d-none d-sm-block" dir="rtl">
+  <div class="container">
+    <div class="row gx-4 align-items-center">
+      <!-- Localisation -->
+      <div class="col-auto d-none d-lg-flex align-items-center">
+        <span class="top-bar-text">الرباط – المغرب</span>
+        <span class="fas fa-map-marker-alt icon-sm me-2"></span>
+      </div>
+      <!-- Horaires en arabe -->
+      <div class="col-auto ms-md-auto order-md-2 d-none d-sm-flex align-items-center">
+        <span class="top-bar-text">الإثنين–السبت، 8:00–18:00. الأحد مغلق</span>
+        <span class="fas fa-clock icon-sm me-2"></span>
+      </div>
+      <!-- Téléphone -->
+      <div class="col-auto d-flex align-items-center">
+        <a href="tel:+212644453212" class="top-bar-link">+212 6 44 4532 12</a>
+        <span class="fas fa-phone-alt icon-sm me-2"></span>
+      </div>
+    </div>
+    </div>
+  </div>
+<style>
+  /* Style de la marque dans la navbar */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;               /* espace entre l'icône et le texte */
+  font-family: 'Tajawal', sans-serif;
+          /* gras */
+  color: #6c63ff;            /* violet principal */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Icône unicons */
+.navbar-brand .uil {
+  font-size: 2rem;           /* taille de l'icône */
+  color: #facc15;            /* jaune accent */
+  transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.navbar-brand:hover {
+  color: #d4af37;            /* doré au survol */
+}
+
+.navbar-brand:hover .uil {
+  transform: rotate(20deg);  /* rotation légère */
+  color: #fff;               /* icône devient blanche */
+}
+
+</style>
+<style>
+
+  .dropdown-item:focus,
+.dropdown-item:active {
+  background-color: transparent !important;
+  color: inherit !important;
+  outline: none !important;
+}
+</style>
+
+      <nav class="navbar navbar-expand-sm navbar-light">
+          <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="uil uil-user"></i>
+          ديجي-ثقافة
+        </a>                  <!-- <span data-hover="الرقمنة على القوانين الثقافية"></span> -->
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div> -->
+             <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+  <!-- الرئيسية sans sous-menu -->
+  <li class="nav-item">
+    <a class="nav-link" href="#resume">الرئيسية</a>
+  </li>
+
+  <!-- حقوق الإيداع avec sous-menu personnalisé -->
+  <li class="nav-item dropdown custom-dropdown">
+    <a class="nav-link" href="">حقوق الإيداع  ▾</a>
+
+    <div class="dropdown-menu text-right">
+      <a class="dropdown-item" href="first.html">مقالات</a>
+      <a class="dropdown-item" href="#deposit-laws">قوانين</a>
+      <a class="dropdown-item" href="#deposit-videos">فيديوهات</a>
+    </div>
+  </li>
+
+  <!-- حقوق الأداء avec sous-menu -->
+  <li class="nav-item dropdown custom-dropdown">
+    <a class="nav-link" href="">حقوق الأداء ▾</a>
+    <div class="dropdown-menu text-right">
+      <a class="dropdown-item" href="second.html">مقالات</a>
+      <a class="dropdown-item" href="#ho9o9-laws">قوانين</a>
+      <a class="dropdown-item" href="#ho9o9-videos">فيديوهات</a>
+    </div>
+  </li>
+
+  <!-- الدعم العمومي avec sous-menu -->
+  <li class="nav-item dropdown custom-dropdown">
+    <a class="nav-link" href="#public-support">الدعم العمومي▾</a>
+    <div class="dropdown-menu text-right">
+      <a class="dropdown-item" href="third.html">مقالات</a>
+      <a class="dropdown-item" href="#support-laws">قوانين</a>
+      <a class="dropdown-item" href="#support-videos">فيديوهات</a>
+    </div>
+  </li>
+
+  <!-- استشارات -->
+  <li class="nav-item">
+    <a class="nav-link" href="stichara.html">استشارات</a>
+  </li>
+
+  <!-- قوانين أخرى -->
+  <li class="nav-item">
+    <a class="nav-link" href="#stichr">خدمات الاستشارة</a>
+  </li>
+
+</ul>
+    </div>
+    <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                      
+                      </div>
+                    </div>
+                </ul>
+          </div>
+    </nav>
+    <style>
+
+      .custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  padding: 8px 16px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+    </style>
+
+    <!-- ABOUT -->
+    <!-- ABOUT in Arabic with RTL order -->
+<section class="hero-section d-flex align-items-center" id="about" dir="rtl">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texte à gauche sur desktop, centré sur mobile -->
+      <div class="col-lg-7 col-md-12 order-lg-1 order-2">
+        <div class="hero-text text-end pe-lg-5">
+          <h2 class="hero-subtitle">مرحبًا بكم في</h2>
+          <h1 class="hero-title">منصة ديجي-ثقافة</h1>
+          <p class="hero-description">
+            منصة مبتكرة لــ
+            <span class="highlight">الطلاب المهتمين بالثقافة</span>,
+            <span class="highlight">الباحثين في التراث المغربي</span>
+            و<span class="highlight">الفنانين والمتخصصين في الفنون</span>.
+          </p>
+          <div class="hero-buttons mt-4 justify-content-end d-flex">
+            <a href="#project" class="btn btn-outline-primary btn-lg me-3">
+              <i class="uil uil-lightbulb"></i> اكتشف المشاريع
+            </a>
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="uil uil-phone"></i> اتصل بنا
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image à droite sur desktop, en haut sur mobile -->
+      <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0 order-lg-2 order-1">
+        <div class="hero-image-wrapper">
+          <img src="images/project/back-removebg-preview.png"
+               alt="صورة توضيحية"
+               class="img-fluid hero-image">
+          <div class="hero-image-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+  /* --- Hero Section Styles --- */
+.hero-section {
+  min-height: 90vh;
+  position: relative;
+  background: url('images/hero-bg-pattern.svg') center/cover no-repeat;
+  padding: 60px 0;
+}
+.hero-image-wrapper {
+  position: relative;
+}
+.hero-image {
+  width: 164%;        /* Passe de 100% à 120% de son conteneur */
+  max-width: none;    /* Annule toute limite de largeur */
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+.hero-image-overlay {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(108, 99, 255, 0.2);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.hero-text .hero-subtitle {
+  font-size: 1.25rem;
+  color: #6c63ff;
+  font-weight: 600;
+}
+.hero-text .hero-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+}
+.hero-description .highlight {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero-text .hero-title {
+    font-size: 2.25rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+</style>
+<style>
+  /* Agrandir l’image */
+.custom-big-image {
+  width: 130%;
+  max-width: none;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Si tu veux centrer et ne pas dépasser sur mobile */
+@media (max-width: 768px) {
+  .custom-big-image {
+    width: 100%;
+  }
+}
+
+</style>
+
+
+    <!-- PROJECTS -->
+<section  id="stichr"  class="bg-light py-5" dir="rtl"style="background: linear-gradient(to top right, #fff, #ffff);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h3 class="fs-2 fs-md-3">خدمات الاستشارة القانونية</h3>
+      <hr class="short" style="width: 4rem; border: 2px solid #6c63ff;">
+      <p class="mt-3">نقدم للفنانين والمبدعين استشارات متخصصة لحماية حقوقهم القانونية وتعزيز مشاريعهم.</p>
+    </div>
+
+    <div class="row g-4 align-items-center mb-5">
+      <div class="col-lg-6">
+        <div class="bg-holder rounded shadow" style="background-image:url('images/project/mongo-removebg-preview.png'); min-height: 400px; background-size: cover;"></div>
+      </div>
+      <div class="col-lg-6 bg-white p-4 rounded shadow">
+        <h5>استشارة حول حقوق الفنان</h5>
+        <p class="mt-3">هل يحق لي كفنان المطالبة بتعويض إذا استُعمل عملي الفني دون إذن؟ نستعرض لك كل الجوانب القانونية لحمايتك.</p>
+        <a class="btn btn-outline-primary mt-2" href="#">قراءة المزيد</a>
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-center mb-5 flex-lg-row-reverse">
+      <div class="col-lg-6">
+        <div class="bg-holder rounded shadow" style="background-image:url('images/project/UP2.jfif'); min-height: 200px; background-size: cover;"></div>
+      </div>
+      <div class="col-lg-6 bg-white p-4 rounded shadow">
+        <h5>حماية الأعمال المسرحية</h5>
+        <p class="mt-3">كيف يمكنني حماية نص مسرحي من السرقة؟ نرشدك لطرق الإيداع والتوثيق والتصريح القانوني بحقوقك.</p>
+        <a class="btn btn-outline-primary mt-2" href="#">اقرأ المزيد</a>
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-center mb-5">
+      <div class="col-lg-6">
+        <div class="bg-holder rounded shadow" style="background-image:url('images/project/UP1.jfif'); min-height: 200px; background-size: cover;"></div>
+      </div>
+      <div class="col-lg-6 bg-white p-4 rounded shadow">
+        <h5>حقوق الأداء والبث</h5>
+        <p class="mt-3">هل يمكنني كعازف المطالبة بحقوق عند بث عملي على القنوات أو المنصات؟ نوضح لك سبل التحصيل القانوني للعائدات.</p>
+        <a class="btn btn-outline-primary mt-2" href="#">تعرف على التفاصيل</a>
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col-md-4 mb-4">
+        <h6><i class="fas fa-balance-scale text-primary me-2"></i> استشارات قانونية مخصصة</h6>
+        <p class="small">خبراء في القوانين الثقافية لحمايتك من التعدي.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6><i class="fas fa-handshake text-primary me-2"></i> دعم في العقود الفنية</h6>
+        <p class="small">نراجع معك العقود ونضمن بنودًا منصفة.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6><i class="fas fa-lightbulb text-primary me-2"></i> حلول مبتكرة لحقوق رقمية</h6>
+        <p class="small">نواكب التطورات لحماية أعمالك على الإنترنت والمنصات.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="py-6 bg-100" style="background: linear-gradient(to top right, #fbffff, #ffffff);">
+  <div class="container text-center">
+    <h3 class="fs-2 fs-md-3 text-info fw-bold mb-3">خدمات ديجي-ثقافة</h3>
+    <hr class="short mx-auto" style="width: 4rem; border-top: 3px solid #0ea5e9;" />
+    <p class="mb-5 text-muted">نواكب الفنانين والمبدعين لفهم وحماية حقوقهم في الفضاء الثقافي الرقمي</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="bg-white p-4 px-5 rounded-4 shadow-sm h-100 transition-transform hover-shadow-lg position-relative overflow-hidden">
+          <div class="icon bg-info text-white rounded-circle d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 60px; height: 60px; font-size: 1.8rem;">
+            📖
+          </div>
+          <h5 class="fw-semibold">مقالات توعوية</h5>
+          <p class="text-muted">نشرح المفاهيم القانونية والثقافية بلغة مبسطة وسلسة.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="bg-white p-4 px-5 rounded-4 shadow-sm h-100 transition-transform hover-shadow-lg position-relative overflow-hidden">
+          <div class="icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 60px; height: 60px; font-size: 1.8rem;">
+            📹
+          </div>
+          <h5 class="fw-semibold">فيديوهات تعليمية</h5>
+          <p class="text-muted">نقدم محتوى مرئي يساعدكم على فهم الحقوق الثقافية بشكل أعمق.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="bg-white p-4 px-5 rounded-4 shadow-sm h-100 transition-transform hover-shadow-lg position-relative overflow-hidden">
+          <div class="icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 60px; height: 60px; font-size: 1.8rem;">
+            📩
+          </div>
+          <h5 class="fw-semibold">استشارات</h5>
+          <p class="text-muted">نستقبل استفساراتكم ونوجهكم حسب القوانين الثقافية المغربية لحماية أعمالكم.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- Ajouter animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CONTACT -->
+ <section class="contact py-5" id="contact">
+  <div class="container">
+    <div class="row">
+
+      <!-- Carte et infos -->
+      <div class="col-lg-5 mr-lg-5 col-12">
+        <div class="google-map w-100 mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.452425472331!2d-6.841650684846334!3d34.02088278061525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76cd5b05e5ab1%3A0xfdf7a97c42b8d0f3!2sISADAC!5e0!3m2!1sar!2sma!4v1686849911111" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+          <div class="contact-info-item">
+            <h3 class="mb-3 text-white">الرباط - المغرب</h3>
+            <p class="footer-text mb-0">+212 600 000 000</p>
+            <p><a href="mailto:isadac.research@edu.ma">isadac.research@edu.ma</a></p>
+          </div>
+
+          <ul class="social-links">
+            <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+            <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="YouTube"></a></li>
+            <li><a href="#" class="uil uil-linkedin" data-toggle="tooltip" data-placement="left" title="LinkedIn"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div class="col-lg-6 col-12">
+        <div class="contact-form">
+          <h2 class="mb-4">هل ترغب في التواصل أو التعاون؟</h2>
+
+          <form action="#" method="post">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <input type="text" class="form-control" name="name" placeholder="الاسم الكامل" id="name">
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" id="email">
+              </div>
+
+              <div class="col-12">
+                <textarea name="message" rows="6" class="form-control" id="message" placeholder="اكتب رسالتك هنا..."></textarea>
+              </div>
+
+              <div class="ml-lg-auto col-lg-5 col-12">
+                <input type="submit" class="form-control submit-btn" value="إرسال">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <!-- <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p> -->
+
+                            <p class="copyright-text text-center">جميع الحقوق محفوظة © 2025 ديجي-ثقافة</p>
+                              <p class="copyright-text text-center">
+                                تصميم بواسطة <a href="#">فريق ديجي-ثقافة</a>
+                              </p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
