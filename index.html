@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
   <meta name="description" content="منصة رقمية للثقافة المغربية">
   <meta name="keywords" content="رقمنة الثقافة, التراث المغربي, الدعم الثقافي, القانون الثقافي">
   <meta name="robots" content="index, follow">
@@ -25,10 +27,43 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 />
   <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-    }
 
+    @media (min-width: 992px) {
+  .hero-image {
+    max-width: 60%;
+  }
+}
+    * {
+  box-sizing: border-box;
+  }
+
+  .hero-image {
+  max-width: 40%; /* Réduire la largeur de l’image à 80% du conteneur */
+  height: auto;   /* Conserve les proportions */
+  margin: auto;   /* Centre l'image horizontalement */
+}
+
+body {
+    overflow-x: hidden;
+
+  margin: 0;
+  overflow-x: hidden; 
+  direction: rtl; 
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+} */
+ 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
     nav.navbar {
       position: sticky;
       top: 0;
@@ -381,11 +416,20 @@
       </div>
 
       <!-- Image à droite sur desktop, en haut sur mobile -->
-      <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0 order-lg-2 order-1">
+      <!-- <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0 order-lg-2 order-1">
         <div class="hero-image-wrapper">
           <img src="images/project/back-removebg-preview.png"
                alt="صورة توضيحية"
                class="img-fluid hero-image">
+          <div class="hero-image-overlay"></div>
+        </div>
+      </div> -->
+
+      <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0 order-lg-2 order-1">
+        <div class="hero-image-wrapper">
+          <img src="images/project/back-removebg-preview.png"
+              alt="صورة توضيحية"
+              class="img-fluid hero-image">
           <div class="hero-image-overlay"></div>
         </div>
       </div>
